@@ -7,8 +7,9 @@
 use strict;
 use warnings;
 
+my $dir = '/Users/kazu/study/perl';
 
 # get cpu
-my @files = grep { $_ =~ /cal/ } glob ('/Users/kazu/study/perl/*');
+my @files = grep { $_ =~ /cal/ } glob ("$dir/*");
 
 print join ("\n", @files);
